@@ -34,7 +34,7 @@ def calculate_pay_details(annual_salary):
     return hourly_wage, gross_biweekly, net_biweekly, effective_tax_rate
 
 # Streamlit UI
-st.set_page_config(page_title=\"Retirement Calculator\", layout=\"centered\")
+st.set_page_config(page_title="Retirement Calculator", layout="centered")
 st.title(\"💰 Retirement Income Calculator\")
 
 salary = st.number_input(\"Enter your annual salary ($):\", min_value=0, step=1000, value=100000)
