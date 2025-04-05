@@ -37,13 +37,13 @@ def calculate_pay_details(annual_salary):
 st.set_page_config(page_title="Retirement Calculator", layout="centered")
 st.title("💰 Retirement Income Calculator")
 
-salary = st.number_input(\"Enter your annual salary ($):\", min_value=0, step=1000, value=100000)
+salary = st.number_input("Enter your annual salary ($):", min_value=0, step=1000, value=100000)
 
-if st.button(\"Calculate\"):
+if st.button("Calculate"):
     hourly, gross, net, tax_rate = calculate_pay_details(salary)
-    st.markdown(\"### Results\")
-    st.write(f\"**Hourly Wage:** ${hourly:.2f}\")
-    st.write(f\"**Biweekly Gross:** ${gross:.2f}\")
-    st.write(f\"**Biweekly Net:** ${net:.2f}\")
-    st.write(f\"**Effective Tax Rate:** {tax_rate:.2f}%\")
+    st.markdown("### Results")
+    st.write(f"**Hourly Wage:** ${hourly:.2f}")
+    st.write(f"**Biweekly Gross:** ${gross:.2f}")
+    st.write(f"**Biweekly Net:** ${net:.2f}")
+    st.write(f"**Effective Tax Rate:** {tax_rate:.2f}%")
 
